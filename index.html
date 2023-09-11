@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./files/img/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./files/style/style.css" />
+    <title>Countries</title>
+  </head>
+  <body>
+    <!-- HEADER START -->
+    <div class="header">
+      <div class="container header-container">
+        <a href="#" class="header-logo">Where in the world?</a>
+        <a id="change-mode" class="header__change-mode">
+          <img
+            src="./files/img/sun-icon.svg"
+            id="light-btn"
+            alt=""
+            class="change-mode__icon hidden"
+            width="30"
+            height="30"
+          />
+          <img
+            src="./files/img/change-mode-icon.svg"
+            id="dark-btn"
+            alt=""
+            class="change-mode__icon"
+            width="20"
+            height="20"
+          />
+          <p id="change-mode-text" class="change-mode__text">Dark mode</p>
+        </a>
+      </div>
+    </div>
+    <!-- HEADER END -->
+    <!-- SEARCH MENU START -->
+    <div class="container search-container">
+      <div class="select-region__wrapper">
+        <form class="input-form" id="search-form">
+          <img class="search-icon" src="./files/img/search-icon.svg" alt="" />
+          <input
+            id="search-form-input"
+            class="search-input"
+            type="text"
+            placeholder="Search for a country…"
+          />
+        </form>
+
+        <select id="selector" class="select-wrapper">
+          <option class="select-value" value="All">All</option>
+          <option class="select-value" value="Africa">Africa</option>
+          <option class="select-value" value="Americas">Americas</option>
+          <option class="select-value" value="Asia">Asia</option>
+          <option class="select-value" value="Europa">Europa</option>
+          <option class="select-value" value="Oceania">Oceania</option>
+        </select>
+      </div>
+    </div>
+    <!-- SEARCH MENU END -->
+    <!-- HERO START -->
+    <div class="hero-container container">
+      <div class="hero-wrapper" id="hero"></div>
+    </div>
+    <!-- HERO END -->
+    <!-- OVERLAY -->
+    <div class="overlay hidden" id="overlay">
+      <div class="lds-ring">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <script type="module" src="./files/js/app.js"></script>
+    <script type="module" src="./files/js/request.js"></script>
+    <script type="module" src="./files/js/mode-change.js"></script>
+  </body>
+</html>

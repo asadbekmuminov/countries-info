@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countr</title>
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/countr.css" />
+  </head>
+  <body>
+    <!-- HEADER START -->
+    <div class="header">
+      <div class="container header-container">
+        <a href="#" class="header-logo">Where in the world?</a>
+        <a id="change-mode" class="header__change-mode">
+          <img
+            src="../img/sun-icon.svg"
+            id="light-btn"
+            alt=""
+            class="change-mode__icon hidden"
+            width="30"
+            height="30"
+          />
+          <img
+            src="../img/change-mode-icon.svg"
+            id="dark-btn"
+            alt=""
+            class="change-mode__icon"
+            width="20"
+            height="20"
+          />
+          <p id="change-mode-text" class="change-mode__text">Dark mode</p>
+        </a>
+      </div>
+    </div>
+    <!-- HEADER END -->
+    <!-- BTN BACK START -->
+    <div class="container back-container">
+      <a class="countr-btn-back" href="../../index.html">
+        <img
+          class="conuntr-back-icon"
+          src="../img/arrow-back-countr-page.svg"
+          alt=""
+          width="20"
+          height="20"
+        />
+        <p>Back</p>
+      </a>
+    </div>
+    <!-- BTN BACK END -->
+    <!-- HERO START -->
+    <div id="country-hero" class="container hero-container">
+      <img
+        class="hero-img"
+        id="image"
+        src="../img/flag-germany.jpg"
+        width="560"
+        height="400"
+        alt=""
+      />
+      <div class="hero-info">
+        <div class="hero-info-wrapper">
+          <div class="hero-info-left">
+            <h2 id="countr-name">name</h2>
+            <p class="hero-info-text" id="Nname">Nname</p>
+            <p class="hero-info-text" id="population">population</p>
+            <p class="hero-info-text" id="region">population</p>
+            <p class="hero-info-text" id="Sregion">Sregion</p>
+            <p class="hero-info-text" id="capital">Sregion</p>
+          </div>
+          <div class="hero-info-right">
+            <p class="hero-info-text" id="domain">domain</p>
+            <p class="hero-info-text" id="curren">curren</p>
+            <p class="hero-info-text" id="lang">lang</p>
+          </div>
+        </div>
+        <div class="hero-info-borders">
+          <p class="hero-info-text">Border Countries:</p>
+        </div>
+      </div>
+    </div>
+    <!-- HERO END -->
+    <!-- OVERLAY START -->
+    <div class="overlay hidden" id="overlay">
+      <div class="lds-ring">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <!-- OVERLAY END -->
+    <!-- JS -->
+    <script type="module" src="../js/countr.js"></script>
+    <script type="module" src="../js/mode-change.js"></script>
+  </body>
+</html>

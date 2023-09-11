@@ -1,0 +1,118 @@
+:root {
+  --text-color: #111517;
+  --black: black;
+  --body-bg-color: #f2f2f2;
+  --white: #fff;
+  --box-shadow-back: rgba(0, 0, 0, 0.29);
+}
+.dark-mode {
+  --text-color: #fff;
+  --black: #fff;
+  --body-bg-color: #202c36;
+  --white: #2b3844;
+}
+.countr-btn-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-left: 3.2rem;
+  margin-bottom: 6rem;
+  width: 100%;
+  max-width: 16rem;
+  border-radius: 6px;
+  background: var(--white);
+  box-shadow: 0px 0px 7px 0px var(--box-shadow-back);
+}
+
+.countr-btn-back p {
+  padding: 1rem 0;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.25;
+}
+/* HERO INFO START */
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+}
+.hero-img {
+  margin-bottom: 5rem;
+  border-radius: 5px;
+}
+.hero-info {
+  display: flex;
+  margin-top: 4rem;
+  flex-direction: column;
+  width: 100%;
+  max-width: 55rem;
+}
+.hero-info-wrapper {
+  display: flex;
+  gap: 11.7rem;
+  margin-bottom: 6.7rem;
+}
+.hero-info-left h2 {
+  color: var(--text-color);
+  font-size: 3.2rem;
+  font-weight: 800;
+  margin-bottom: 2.3rem;
+}
+.hero-info-right {
+  margin-top: 6.7rem;
+}
+.hero-info-text {
+  color: var(--text-color);
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2;
+  display: block;
+}
+.info-text {
+  color: var(--text-color);
+  font-family: Nunito Sans;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 2;
+}
+.border-style {
+  border: 1px solid var(--black);
+  margin-right: 5px;
+}
+/* HERO INFO END */
+
+@media (max-width: 1225px) {
+  .hero-info-wrapper {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 6.7rem;
+  }
+  .hero-img {
+    margin-bottom: 5rem;
+    border-radius: 5px;
+    margin-right: 1rem;
+  }
+}
+@media (max-width: 1035px) {
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-info {
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 630px) {
+  .hero-img {
+    width: 32rem;
+    height: 23rem;
+  }
+}
+@media (max-width: 550px) {
+  .hero-info-wrapper {
+    flex-direction: column;
+    gap: 0rem;
+  }
+}
